@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
+<script src="public/js/angular.min.js"></script>
+<script type="text/javascript">
+function DefaultCtrl($scope) {
+    $scope.names = ["john", "bill", "charlie", "robert", "alban", "oscar", "marie", "celine", "brad", "drew", "rebecca", "michel", "francis", "jean", "paul", "pierre", "nicolas", "alfred", "gerard", "louis", "albert", "edouard", "benoit", "guillaume", "nicolas", "joseph"];
+}
+
+angular.module('MyModule', []).directive('autoComplete', function($timeout) {
+    return function(scope, iElement, iAttrs) {
+            iElement.autocomplete({
+                source: scope[iAttrs.uiItems],
+                select: function() {
+                    $timeout(function() {
+                      iElement.trigger('input');
+                    }, 0);
+                }
+            });
+    };
+});
+</script>
+</head>
+<body>
+<div ng-app='MyModule'>
+    <div ng-controller='DefaultCtrl'>
+        <input auto-complete ui-items="names" ng-model="selected">
+        selected = {{selected}}
+    </div>
+</div>
+</body>
+</html>

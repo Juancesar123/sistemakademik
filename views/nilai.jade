@@ -1,0 +1,117 @@
+html
+  head
+  body
+    section.content-header
+      h1
+        | Data nilai
+        small lihat Data nilai
+      ol.breadcrumb
+        li.active
+          a(href='#')
+            i.fa.fa-database
+            |  Data nilai
+    .box-header
+    -if(level=='murid'){
+    -}else if(level=="admin"){
+    -}else{
+      button.btn.btn-primary(data-toggle='modal', data-target='#myModal')
+        i.fa.fa-plus
+        |  Tambah nilai
+      button.btn.btn-danger(ng-click='hapus()')
+        i.fa.fa-trash
+        |  Hapus nilai
+      button.btn.btn-primary(ng-click='cetak()')
+        i.fa.fa-printer
+        |  Cetak Nilai
+    -}
+    .box-body
+      #myModal.modal.fade(role='dialog')
+        .modal-dialog
+          // Modal content
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal') ×
+              h4.modal-title Input data nilai
+            .modal-body
+              .form-group
+                label Nama
+                select.form-control(ng-model='nama')
+                  option(ng-repeat='item in murid', value='{{item.nama}}') {{item.nama}}
+              .form-group
+                label Kelas
+                select.form-control(ng-model='kelasku')
+                  option(ng-repeat='item in kelas', value='{{item.kelas}}') {{item.kelas}}
+              .form-group
+                label Uts
+                input.form-control(type='text', ng-model='uts')
+              .form-group
+                label Uas
+                input.form-control(type='text', ng-model='uas')
+              .form-group
+                label Nilai
+                input.form-control(type='text', ng-model='total')
+            .modal-footer
+              button.btn.btn-primary(ng-click='tambah()')
+                i.fa.fa-send
+                |  Submit
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+      #myModal1.modal.fade(role='dialog')
+        .modal-dialog
+          // Modal content
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal') ×
+              h4.modal-title Ubah Data Nilai
+            .modal-body
+              .form-group
+                label Nama
+                select.form-control(ng-model='nama')
+                  option(ng-repeat='item in murid', value='{{item.nama}}') {{item.nama}}
+              .form-group
+                label Kelas
+                select.form-control(ng-model='kelasku')
+                  option(ng-repeat='item in kelas', value='{{item.kelas}}') {{item.kelas}}
+              .form-group
+                label Uts
+                input.form-control(type='text', ng-model='uts')
+              .form-group
+                label Uas
+                input.form-control(type='text', ng-model='uas')
+              .form-group
+                label Nilai
+                input.form-control(type='text', ng-model='total')
+            .modal-footer
+              button.btn.btn-success(ng-click='actionedit()')
+                i.fa.fa-send
+                |  Submit
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+      table.table.table-bordered.table-striped(datatable='ng', dt-columns='dtColumns', dt-options='dtOptions')
+        thead
+          th
+            input(type='checkbox', ng-click='checkall()')
+          th nama
+          th kelas
+          th uts
+          th uas
+          th nilai
+          -if(level=='murid'){
+          -}else if(level=="admin"){
+          -}else{
+          th Action
+          -}
+        tbody
+          tr(ng-repeat='item in nilai')
+            td
+              input(type='checkbox', checklist-model='user.hapusnilai', checklist-value='item._id', role='')
+            td {{item.nama}}
+            td {{item.kelas}}
+            td {{item.uts}}
+            td {{item.uas}}
+            td {{item.jumlahnilai}}
+            -if(level=='murid'){
+            -}else if(level=="admin"){
+            -}else{
+            td
+              button.btn.btn-success(data-toggle='modal', ng-click='edit(item)', data-target='#myModal1')
+                i.fa.fa-edit
+            -}

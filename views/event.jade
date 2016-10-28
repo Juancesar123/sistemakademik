@@ -1,0 +1,100 @@
+html
+  head
+  body
+    section.content-header
+      h1
+        | Data Event
+        small lihat Data Event
+      ol.breadcrumb
+        li.active
+          a(href='#')
+            i.fa.fa-database
+            |  Data Event
+    .box-header
+    -if(level=='murid'){
+
+    -}else{
+      button.btn.btn-primary(data-toggle='modal', data-target='#myModal')
+        i.fa.fa-plus
+        |  Tambah Event
+      button.btn.btn-danger(ng-click='hapus()')
+        i.fa.fa-trash
+        |  Hapus Event
+    -}
+    .box-body
+      #myModal.modal.fade(role='dialog')
+        .modal-dialog
+          // Modal content
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal') ×
+              h4.modal-title Input data Event
+            .modal-body
+              .form-group
+                label  Nama Event
+                input.form-control(type='text', ng-model='nama')
+              .form-group
+                label  Tempat
+                input.form-control(type='text', ng-model='tempat')
+              .form-group
+                label Tanggal
+                input.form-control(type='text', ng-model='tanggal')
+              .form-group
+                label Keterangan
+                textarea.form-control(ng-model='keterangan')
+            .modal-footer
+              button.btn.btn-primary(ng-click='tambah()')
+                i.fa.fa-send
+                |  Submit
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+      #myModal1.modal.fade(role='dialog')
+        .modal-dialog
+          // Modal content
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal') ×
+              h4.modal-title Ubah Data Event
+            .modal-body
+              .form-group
+                label  Nama Event
+                input.form-control(type='text', ng-model='nama')
+              .form-group
+                label  Tempat
+                input.form-control(type='text', ng-model='tempat')
+              .form-group
+                label Tanggal
+                input.form-control(type='text', ng-model='tanggal')
+              .form-group
+                label Keterangan
+                textarea.form-control(ng-model='keterangan')
+            .modal-footer
+              button.btn.btn-success(ng-click='actionedit()')
+                i.fa.fa-send
+                |  Submit
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+      table.table.table-bordered.table-striped(datatable='ng', dt-columns='dtColumns', dt-options='dtOptions')
+        thead
+          th
+            input(type='checkbox', ng-click='checkall()')
+          th Nama
+          th Tempat
+          th Tanggal
+          th keterangan
+           -if(level=='murid'){
+           -}else{
+          th Action
+           -}
+        tbody
+          tr(ng-repeat='item in dataevent')
+            td
+              input(type='checkbox', checklist-model='user.hapusevent', checklist-value='item._id', role='')
+            td {{item.nama}}
+            td {{item.tempat}}
+            td {{item.tanggal}}
+            td {{item.keterangan}}
+            -if(level=='murid'){
+            -}else{
+            td
+              button.btn.btn-success(data-toggle='modal', ng-click='edit(item)', data-target='#myModal1')
+                i.fa.fa-edit
+            -}

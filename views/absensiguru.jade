@@ -1,0 +1,79 @@
+html
+  head
+  body
+    section.content-header
+      h1
+        | Absensi Guru
+        small lihat Data Absensi Guru
+      ol.breadcrumb
+        li.active
+          a(href='#')
+            i.fa.fa-database
+            |  Data Absensi Guru
+    .box-header
+    -if(level=="murid"){
+
+    -}else if(level=="admin"){
+      button.btn.btn-danger(ng-click='hapus()')
+        i.fa.fa-trash
+        |  Hapus Absen
+      button.btn.btn-success(ng-click='cetakxlsx()')
+        i.fa.fa-file-excel-o
+        |  Cetak Laporan Absen
+    -}else{
+
+    -}  
+    .box-body
+      #myModal.modal.fade(role='dialog')
+        .modal-dialog
+          // Modal content
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal') ×
+              h4.modal-title Input data Absen
+            .modal-body
+              .form-group
+                label Keterangan
+                select.form-control(ng-model='ket')
+                  option(value='izin') Izin
+                  option(value='sakit') Sakit
+                  option(value='alfa') Alfa
+                  option(value='masuk') Masuk
+            .modal-footer
+              button.btn.btn-primary(ng-click='actionedit()')
+                i.fa.fa-send
+                |  Submit
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+      table.table.table-bordered.table-striped(datatable='ng', dt-columns='dtColumns', dt-options='dtOptions')
+        thead
+          th
+            input(type='checkbox', ng-click='checkall()')
+          th Nama Guru
+          th Izin
+          th Sakit
+          th Alfa
+          th Masuk
+          -if(level=="admin"){
+          th Action
+          -}else{
+
+          -}
+        tbody
+          tr(ng-repeat='item in absensiguru')
+            td
+              input(type='checkbox', checklist-model='user.hapusabsensiguru', checklist-value='item._id', role='')
+            td {{item.nama}}
+            td {{item.izin}}
+            td {{item.sakit}}
+            td {{item.alfa}}
+            td {{item.masuk}}
+            -if(level=="admin"){
+
+
+            td
+              button.btn.btn-success(data-toggle='modal', ng-click='edit(item)', data-target='#myModal')
+                i.fa.fa-plus
+                |  Input Absen
+            -}else{
+
+            -}

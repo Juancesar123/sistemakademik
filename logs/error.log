@@ -1,0 +1,138 @@
+2016-09-03T03:17:47.084Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:870:11)
+    at exports._exceptionWithHostPort (util.js:893:20)
+    at Server._listen2 (net.js:1234:14)
+    at listen (net.js:1270:10)
+    at Server.listen (net.js:1366:5)
+    at startAsync (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:24:10)
+    at startExpressApp (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:51:12)
+    at null.<anonymous> (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:186:12)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\lib\listenerCollection.js:172:41
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\lib\listenerCollection.js:151:24
+    at _fulfilled (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:794:54)
+    at self.promiseDispatch.done (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:823:30)
+    at Promise.promise.promiseDispatch (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:756:13)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:516:49
+    at flush (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:110:17)
+    at nextTickCallbackWith0Args (node.js:420:9)
+2016-09-03T03:17:47.090Z - error: Error occured during reporter init Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:870:11)
+    at exports._exceptionWithHostPort (util.js:893:20)
+    at Server._listen2 (net.js:1234:14)
+    at listen (net.js:1270:10)
+    at Server.listen (net.js:1366:5)
+    at startAsync (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:24:10)
+    at startExpressApp (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:51:12)
+    at null.<anonymous> (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:186:12)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\lib\listenerCollection.js:172:41
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\lib\listenerCollection.js:151:24
+    at _fulfilled (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:794:54)
+    at self.promiseDispatch.done (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:823:30)
+    at Promise.promise.promiseDispatch (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:756:13)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:516:49
+    at flush (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:110:17)
+From previous event:
+From previous event:
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\reporter.js:90:8
+From previous event:
+    at Reporter.init (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\reporter.js:69:30)
+    at Reporter.reporter.init (C:\xampp\htdocs\siakadmean\node_modules\jsreport\lib\extendInit.js:8:21)
+    at Object.<anonymous> (C:\xampp\htdocs\siakadmean\server.js:16:55)
+2016-09-03T03:18:40.878Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:870:11)
+    at exports._exceptionWithHostPort (util.js:893:20)
+    at Server._listen2 (net.js:1234:14)
+    at listen (net.js:1270:10)
+    at Server.listen (net.js:1366:5)
+    at startAsync (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:24:10)
+    at startExpressApp (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:51:12)
+    at null.<anonymous> (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:186:12)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\lib\listenerCollection.js:172:41
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\lib\listenerCollection.js:151:24
+    at _fulfilled (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:794:54)
+    at self.promiseDispatch.done (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:823:30)
+    at Promise.promise.promiseDispatch (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:756:13)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:516:49
+    at flush (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:110:17)
+    at nextTickCallbackWith0Args (node.js:420:9)
+2016-09-03T03:18:40.885Z - error: Error occured during reporter init Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:870:11)
+    at exports._exceptionWithHostPort (util.js:893:20)
+    at Server._listen2 (net.js:1234:14)
+    at listen (net.js:1270:10)
+    at Server.listen (net.js:1366:5)
+    at startAsync (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:24:10)
+    at startExpressApp (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:51:12)
+    at null.<anonymous> (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-express\lib\reporter.express.js:186:12)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\lib\listenerCollection.js:172:41
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\lib\listenerCollection.js:151:24
+    at _fulfilled (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:794:54)
+    at self.promiseDispatch.done (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:823:30)
+    at Promise.promise.promiseDispatch (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:756:13)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:516:49
+    at flush (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:110:17)
+From previous event:
+From previous event:
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\reporter.js:90:8
+From previous event:
+    at Reporter.init (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\reporter.js:69:30)
+    at Reporter.reporter.init (C:\xampp\htdocs\siakadmean\node_modules\jsreport\lib\extendInit.js:8:21)
+    at Object.<anonymous> (C:\xampp\htdocs\siakadmean\server.js:16:55)
+2016-09-03T03:24:43.561Z - error: Error when processing render request Error during rendering report: Engine must be specified Error: Engine must be specified
+    at invokeRender (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\render\render.js:66:11)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\render\render.js:143:12
+    at _fulfilled (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:794:54)
+    at self.promiseDispatch.done (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:823:30)
+    at Promise.promise.promiseDispatch (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:756:13)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:564:44
+    at flush (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:110:17)
+    at nextTickCallbackWith0Args (node.js:420:9)
+    at process._tickCallback (node.js:349:13) requestId=1
+2016-09-03T03:25:58.754Z - error: Error when processing render request Error during rendering report: Parse error on line 1:
+...ayLoudly this.name}}
+-----------------------^
+Expecting 'COMMENT', 'CONTENT', 'OPEN_RAW_BLOCK', 'OPEN_BLOCK', 'OPEN_INVERSE', 'OPEN_INVERSE_CHAIN', 'INVERSE', 'OPEN_ENDBLOCK', 'OPEN', 'OPEN_UNESCAPED', 'OPEN_PARTIAL', 'OPEN_PARTIAL_BLOCK', got 'EOF' Error: Parse error on line 1:
+...ayLoudly this.name}}
+-----------------------^
+Expecting 'COMMENT', 'CONTENT', 'OPEN_RAW_BLOCK', 'OPEN_BLOCK', 'OPEN_INVERSE', 'OPEN_INVERSE_CHAIN', 'INVERSE', 'OPEN_ENDBLOCK', 'OPEN', 'OPEN_UNESCAPED', 'OPEN_PARTIAL', 'OPEN_PARTIAL_BLOCK', got 'EOF'
+    at Object.parseError (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:26:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInNewContext (vm.js:18:15)
+    at Object.exports.runInNewContext (vm.js:49:17)
+    at module.exports (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\render\engineScript.js:168:8)
+From previous event:
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\render\render.js:143:54
+    at _fulfilled (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:794:54)
+    at self.promiseDispatch.done (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:823:30)
+    at Promise.promise.promiseDispatch (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:756:13)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:564:44
+    at flush (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:110:17) requestId=1
+2016-09-03T03:27:47.181Z - error: Error when processing render request Error during rendering report: Parse error on line 1:
+...ayLoudly this.name}}
+-----------------------^
+Expecting 'COMMENT', 'CONTENT', 'OPEN_RAW_BLOCK', 'OPEN_BLOCK', 'OPEN_INVERSE', 'OPEN_INVERSE_CHAIN', 'INVERSE', 'OPEN_ENDBLOCK', 'OPEN', 'OPEN_UNESCAPED', 'OPEN_PARTIAL', 'OPEN_PARTIAL_BLOCK', got 'EOF' Error: Parse error on line 1:
+...ayLoudly this.name}}
+-----------------------^
+Expecting 'COMMENT', 'CONTENT', 'OPEN_RAW_BLOCK', 'OPEN_BLOCK', 'OPEN_INVERSE', 'OPEN_INVERSE_CHAIN', 'INVERSE', 'OPEN_ENDBLOCK', 'OPEN', 'OPEN_UNESCAPED', 'OPEN_PARTIAL', 'OPEN_PARTIAL_BLOCK', got 'EOF'
+    at Object.parseError (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:26:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInNewContext (vm.js:18:15)
+    at Object.exports.runInNewContext (vm.js:49:17)
+    at module.exports (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\render\engineScript.js:168:8)
+From previous event:
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\lib\render\render.js:143:54
+    at _fulfilled (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:794:54)
+    at self.promiseDispatch.done (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:823:30)
+    at Promise.promise.promiseDispatch (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:756:13)
+    at C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:564:44
+    at flush (C:\xampp\htdocs\siakadmean\node_modules\jsreport\node_modules\jsreport-core\node_modules\listener-collection\node_modules\q\q.js:110:17) requestId=2

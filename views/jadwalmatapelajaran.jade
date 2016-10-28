@@ -1,0 +1,22 @@
+html
+  head
+    meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+    // Bootstrap 3.3.5
+    link(rel='stylesheet', href='public/bootstrap/css/bootstrap.min.css')
+  body
+    .container
+      h1
+        center Jadwal Mata Pelajaran
+      table.table.brodered-stripped
+        thead
+          th Hari
+          th Tanggal
+          th kelas
+          th Mata Pelajaran
+        tbody
+        each item in data
+          tr
+            td=item.hari
+            td=item.tanggal
+            td=item.kelas
+            td=item.matpel
